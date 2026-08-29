@@ -38,3 +38,53 @@ DevSecOps-Secure_CICD/
 ├── requirements.txt
 │
 └── README.md
+
+🔗 Application Endpoints
+🏠 Home
+  /
+
+Displays the DevSecOps Secure Application page.
+❤️ Health Check
+/health
+
+Returns:
+{
+"status": "healthy"
+}
+
+💻 Run Locally
+
+Install dependencies:
+pip install -r requirements.txt
+
+Run the application:
+python app/app.py
+
+open in browser:
+http://127.0.0.1:5000
+
+Health check:
+http://127.0.0.1:5000/health
+
+🔄 DevSecOps Workflow
+Developer
+    ↓
+Git
+    ↓
+GitHub
+    ↓
+CI/CD Pipeline
+    ↓
+Security Scanning
+    ↓
+Testing
+    ↓
+Deployment
+
+🎯 Project Objective
+
+The main objective of this project is to demonstrate the integration of development, security and operations practices into a CI/CD workflow.
+
+👨‍💻 Author
+
+Neerajlo
