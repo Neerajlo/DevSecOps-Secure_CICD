@@ -1,6 +1,10 @@
-FROM python:3.10-slim
+FROM python:3.12-alpine3.24
 
 WORKDIR /app
+
+RUN apk update && \
+    apk upgrade
+
 
 COPY requirements.txt .
 
